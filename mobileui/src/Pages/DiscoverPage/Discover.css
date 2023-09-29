@@ -1,0 +1,29 @@
+.discover-page-container {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  width: max-content;
+  overflow-x: auto;
+}
+.sidebar > button {
+  background-color: var(--grey-color);
+  color: var(--black-color);
+  font-family: inter;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  width: max-content;
+  border: none;
+  margin-right: 10px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.sidebar > button:focus {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}

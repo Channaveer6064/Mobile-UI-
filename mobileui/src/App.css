@@ -2,6 +2,7 @@
   font-family: inter;
 }
 :root {
+  --white-color: white;
   --grey-color: #f2f2f2;
   --black-color: #000000;
 }

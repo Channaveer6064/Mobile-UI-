@@ -7,6 +7,9 @@ export const Reducer = (state, action) => {
       return { ...state, allProducts: payload };
     case "ALL_CATEGORIES":
       return { ...state, allCategories: payload };
+    case "SELECTED_CATEGORY":
+      //   console.log(payload);
+      return { ...state, selectedCategory: payload };
 
     default:
       return state;
