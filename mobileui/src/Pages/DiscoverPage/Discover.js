@@ -7,6 +7,7 @@ export const Discover = () => {
   return (
     <div>
       <Header />
+      <Searchbar />
     </div>
   );
 };

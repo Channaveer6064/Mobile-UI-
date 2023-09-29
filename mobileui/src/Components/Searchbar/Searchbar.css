@@ -1,0 +1,34 @@
+.searchbar-container {
+  margin-top: -0.5rem;
+  display: flex;
+  align-items: center;
+  margin-left: 1.5em;
+  position: relative;
+}
+.searchbar-container > input {
+  padding: 1.2rem 3.5rem;
+  font-size: 16px;
+  background: var(--grey-color);
+  border: none;
+  border-radius: 0.5rem;
+  width: 20rem;
+}
+#search-icon {
+  position: absolute;
+  top: 1.1rem;
+  left: 0.8rem;
+  height: 1.5rem;
+  width: 2rem;
+}
+.searchbar-container > button {
+  border: none;
+  background: transparent;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.searchbar-container > button > img {
+  border: none;
+  background: transparent;
+  padding: 14px, 14px, 15px, 15px;
+  border-radius: 10px;
+}
