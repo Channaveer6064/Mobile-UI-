@@ -1,4 +1,5 @@
 import { Header } from "../../Components/Header/Header";
+import { ProductCard } from "../../Components/ProductCard/ProductCard";
 import { Searchbar } from "../../Components/Searchbar/Searchbar";
 import { useData } from "../../Contexts/DataContext/DataContext";
 import "./Discover.css";
@@ -37,6 +38,11 @@ export const Discover = () => {
           </button>
         ))}
       </nav>
+      <div className="product-listing">
+        {allProducts.map(({ id, title, price, image }) => (
+          <ProductCard key={id} title={title} price={price} image={image} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -18,7 +18,7 @@
   padding: 1rem 1.5rem;
   width: max-content;
   border: none;
-  margin-right: 10px;
+  margin-right: 1rem;
   border-radius: 10px;
   text-transform: capitalize;
   cursor: pointer;
@@ -26,4 +26,9 @@
 .sidebar > button:focus {
   background-color: var(--black-color);
   color: var(--white-color);
+}
+.product-listing {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
 }

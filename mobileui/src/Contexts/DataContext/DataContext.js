@@ -9,6 +9,7 @@ export const DataProvider = ({ children }) => {
     allProducts: [],
     allCategories: [],
     selectedCategory: "all",
+    toggleHeart: false,
   });
   const getData = async () => {
     try {
