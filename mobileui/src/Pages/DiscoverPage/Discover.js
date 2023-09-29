@@ -18,8 +18,7 @@ export const Discover = () => {
     <div className="discover-page-container">
       <Header />
       <Searchbar />
-
-      <div className="filter">
+      <div className="sidebar">
         <button
           onClick={() => handleClick("all")}
           style={
@@ -39,6 +38,7 @@ export const Discover = () => {
           </button>
         ))}
       </div>
+
       <div className="product-listing">
         {allProducts.map(({ id, title, price, image }) => (
           <ProductCard

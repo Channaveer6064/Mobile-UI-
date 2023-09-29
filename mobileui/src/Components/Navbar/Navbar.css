@@ -1,7 +1,7 @@
 .navbar-container {
   z-index: 1;
   position: fixed;
-  top: 88vh;
+  top: 93vh;
   display: flex;
   width: 100vw;
   justify-content: space-around;
