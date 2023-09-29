@@ -1,8 +1,9 @@
 .discover-page-container {
   display: flex;
   flex-direction: column;
+  max-height: 100vh;
 }
-.sidebar {
+.filter {
   display: flex;
   flex-direction: row;
   margin-left: 1.5rem;
@@ -10,7 +11,7 @@
   width: max-content;
   overflow-x: auto;
 }
-.sidebar > button {
+.filter > button {
   background-color: var(--grey-color);
   color: var(--black-color);
   font-family: inter;
@@ -31,4 +32,9 @@
   margin-top: 1.5rem;
   display: flex;
   flex-wrap: wrap;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
 }

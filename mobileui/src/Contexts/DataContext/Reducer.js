@@ -9,9 +9,6 @@ export const Reducer = (state, action) => {
       return { ...state, allCategories: payload };
     case "SELECTED_CATEGORY":
       return { ...state, selectedCategory: payload };
-    // case "TOGGLE_HEART":
-    //   console.log("ahjdhj");
-    //   return { ...state, toggleHeart: !state.toggleHeart };
 
     default:
       return state;

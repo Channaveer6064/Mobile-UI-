@@ -1,4 +1,5 @@
 import { Header } from "../../Components/Header/Header";
+import { Navbar } from "../../Components/Navbar/Navbar";
 import { ProductCard } from "../../Components/ProductCard/ProductCard";
 import { Searchbar } from "../../Components/Searchbar/Searchbar";
 import { useData } from "../../Contexts/DataContext/DataContext";
@@ -10,7 +11,6 @@ export const Discover = () => {
     state: { allProducts, allCategories, selectedCategory },
     dispatch,
   } = useData();
-  console.log(selectedCategory);
   const handleClick = (category) => {
     dispatch({ type: "SELECTED_CATEGORY", payload: category });
   };
@@ -18,7 +18,8 @@ export const Discover = () => {
     <div className="discover-page-container">
       <Header />
       <Searchbar />
-      <nav className="sidebar">
+
+      <div className="filter">
         <button
           onClick={() => handleClick("all")}
           style={
@@ -37,12 +38,19 @@ export const Discover = () => {
             {category}
           </button>
         ))}
-      </nav>
+      </div>
       <div className="product-listing">
         {allProducts.map(({ id, title, price, image }) => (
-          <ProductCard key={id} title={title} price={price} image={image} />
+          <ProductCard
+            key={id}
+            id={id}
+            title={title}
+            price={price}
+            image={image}
+          />
         ))}
       </div>
+      <Navbar />
     </div>
   );
 };

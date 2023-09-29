@@ -1,17 +1,9 @@
 import "./ProductCard.css";
 import { NavLink } from "react-router-dom";
 import { BiHeart, BiSolidHeart } from "react-icons/bi";
-import { useData } from "../../Contexts/DataContext/DataContext";
 export const ProductCard = ({ title, id, price, image }) => {
-  //   const {
-  //     state: { toggleHeart },
-  //     dispatch,
-  //   } = useData();
-  //   const handleClick = () => {
-  //     dispatch({ type: "TOGGLE_HEART" });
-  //   };
   return (
-    <NavLink className="product-card-container">
+    <NavLink to={`/details/${id}`} className="product-card-container">
       <img
         src={image}
         style={{
@@ -21,10 +13,6 @@ export const ProductCard = ({ title, id, price, image }) => {
         }}
       />
       <button>
-        {/* {!toggleHeart ? (
-        ) : (
-          <BiSolidHeart className="heart-icon" />
-        )} */}
         <BiHeart className="heart-icon" />
       </button>
       <strong>{title.slice(0, 10)}</strong>
